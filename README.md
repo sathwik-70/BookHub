@@ -2,9 +2,9 @@
 
 ![BookHub Cover Image](https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/book-open.svg) <!-- *Replace with actual screenshot link when deployed* -->
 
-**A Universal Catalog of Human Knowledge.**
+**A Turnkey Niche Aggregator Web App.**
 
-BookHub is a beautifully curated, open-source gateway to the sum of human achievement. Built with a modern React stack, it seamlessly aggregates open-source books, deep space imagery, scholarly research papers, and curated historical art collections into a single, highly polished, frictionless interface.
+BookHub is a beautifully curated, fully-functional content aggregator ready for monetization. Built with a modern React stack, it seamlessly aggregates books, deep space imagery, scholarly research papers, and curated historical art collections into a single, highly polished, friction-free interface.
 
 ---
 
@@ -101,14 +101,16 @@ bookhub/
 └── vite.config.ts          # Vite bundling and asset serving configuration
 ```
 
-## 🤝 Contributing & Open Source
+## 💰 Monetization Potential
 
-BookHub is open source and strictly ad-free. It exists to celebrate and organize humanity's shared knowledge. We welcome pull requests!
+BookHub is designed to be a frictionless starter business. As the new owner, you can easily monetize this traffic in several ways:
 
-If you'd like to add a new API source (e.g., the Metropolitan Museum of Art, Google Books, or Wikipedia), simply jump into `src/api.ts` and define a new fetching function mapping to the universal `AssetItem` interface.
+1.  **Affiliate Links**: The 'Books' category is primed for Amazon Affiliate integration. We've included a placeholder button in the code so you can drive users to purchase physical book copies.
+2.  **Display Ads**: The masonry grid layout and the Asset Details modal have ample whitespace to drop in Google AdSense or Mediavine tags without disrupting the premium aesthetic.
+3.  **Newsletter Sponsorships**: The footer includes a newsletter capture module to start building an audience you can monetize via sponsored emails.
 
-## 📝 License
+## 📝 License & Ownership
 
-This project is open-source. Please see the [LICENSE](LICENSE) file for details.
+Upon sale, full exclusive rights to the codebase and branding are transferred to the buyer.
 
-*Powered by Open APIs. Designed for the curious.*
+*A premium starter asset built for growth.*

@@ -132,9 +132,21 @@ export function AssetModal({ item, onClose, isSaved, onToggleSave }: AssetModalP
                             <ExternalLink size={18} />
                         </a>
 
+                        {item.type === 'ebooks' && (
+                            <a
+                                href={`https://www.amazon.com/s?k=${encodeURIComponent(item.title + ' ' + (item.author || ''))}&tag=ivorypicksco-21`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="sm:w-auto w-full bg-[#FF9900] text-slate-900 font-bold py-3 px-6 rounded-xl flex items-center justify-center gap-2 hover:bg-[#FF9900]/90 transition-all shadow-lg hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8fafc] focus-visible:ring-[#FF9900]"
+                            >
+                                Buy on Amazon
+                                <ExternalLink size={18} />
+                            </a>
+                        )}
+
                         <button
                             onClick={handleShare}
-                            className="sm:w-auto w-full bg-slate-900/5 hover:bg-slate-900/10 border border-slate-200/60 text-slate-800 font-medium py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8fafc] focus-visible:ring-hub-primary"
+                            className={`${item.type !== 'ebooks' ? 'flex-1' : 'sm:w-auto w-full'} bg-slate-900/5 hover:bg-slate-900/10 border border-slate-200/60 text-slate-800 font-medium py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#f8fafc] focus-visible:ring-hub-primary`}
                         >
                             Share Link
                             <Share2 size={18} />
